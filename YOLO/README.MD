@@ -12,8 +12,8 @@ You can use this YOLO_detect.py to generate a Object Detection Video from origin
 
 1. origin video
 
-![](https://github.com/Spground/DLToy/blob/master/YOLO/traffic.gif)
+<img align=center, src="https://github.com/Spground/DLToy/blob/master/YOLO/traffic.gif"/>
 
 2. detected video
 
-![](https://github.com/Spground/DLToy/blob/master/YOLO/traffic_detect.gif)
+<img align=center, src="https://github.com/Spground/DLToy/blob/master/YOLO/traffic_detect.gif"/>
