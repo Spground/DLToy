@@ -149,12 +149,10 @@ def who_is_it(image_path, database, model):
 
     return min_dist, identity
 
-if __name__ == "__main__":
-    input_image = sys.argv[1]
-    db_img_dir = sys.argv[2]
+def main(database_dir=None, input_face=None):
     FRmodel = faceRecoModel(input_shape=(3, 96, 96))
     FRmodel.compile(optimizer = 'adam', loss = triplet_loss, metrics = ['accuracy'])
     load_weights_from_FaceNet(FRmodel)
-    database = load_database(FRmodel, db_img_dir)
-    min_dist, identity = who_is_it(input_image, database, FRmodel)
+    database = load_database(FRmodel, database_dir)
+    min_dist, identity = who_is_it(input_face, database, FRmodel)
     print(min_dist, identity)
