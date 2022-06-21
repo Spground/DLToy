@@ -1,6 +1,6 @@
 tensorflow==1.12.1
 scipy==1.1.0
-numpy==1.15.4
+numpy==1.22.0
 matplotlib==3.0.1
 Keras==2.2.4
 Pillow==5.3.0
